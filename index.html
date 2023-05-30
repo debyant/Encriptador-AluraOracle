@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Desencriptador</title>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="layout.css">
+
+</head>
+<body>
+          <header>
+                    <img class="logo" src="Imagenes/Logo.svg" alt="logo">
+          </header>
+          <main>
+                    <section class="seccion1">
+                              <div class="contenedor-cajatexto"><textarea placeholder="Ingresa el texto a encriptar/desencriptar" class="cajatexto" id="cajatexto"></textarea>
+                              </div>      
+                              <div class="alerta">
+                                        <img src="Imagenes/alerta.svg" alt="alerta"><br>
+                                        <p>Solo letras minusculas y sin acentos</p>
+                              </div>
+                              <div class="contenedor-botones">
+                                        <input type="button" class="btn-encriptar" value="Encriptar">
+                                        <input type="button" class="btn-desencriptar" value="Desencriptar">
+                              </div>
+
+                    </section> 
+                    <section class="seccion2">
+                              <div class="contenedor-muneco">
+                                        <img src="/Imagenes/Muneco.svg" alt="muneco">
+                              </div>
+                              <div class="contenedor-parrafo" id="noResuelto">
+                                        <h3>Ningún mensaje fue <br> encontrado</h3>                              </div>
+                              <div class="contenedor-copiar">
+                              </div>
+                              <div class="contenedor-resuelto" id="Resuelto">
+                                        <textarea name="texto_resultado" id="textoResultado" class="textoResultado" disabled></textarea>
+                                        <button id="copiar" class="btn-copiar" type="button">Copiar</button>
+                              </div>
+
+                    </section>
+          </main>
+
+<script src="Index.js"></script>
+
+</body>
+</html>
